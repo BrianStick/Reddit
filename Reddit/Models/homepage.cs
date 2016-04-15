@@ -12,7 +12,7 @@ namespace Reddit.Models
         public string id { get; set; }
         [Required]
         public string author { get; set; }
-        public string comments { get; set; }
+        public string title { get; set; }
         public int upvote { get; set; }
         public int downvote { get; set; }
         [Required]
@@ -21,6 +21,7 @@ namespace Reddit.Models
         public string comment { get; set; }
         public DateTime posted { get; set; }
 
+        public virtual ICollection<Comment> Comments { get; set; }  = new List<Comment>();
     }
-    public virtual ICollection<Comments> Comments { get; set; } =  new List comments
 };
+    

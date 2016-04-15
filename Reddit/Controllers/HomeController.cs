@@ -10,6 +10,7 @@ namespace Reddit.Controllers
     {
         public ActionResult Index()
         {
+      
             return View();
         }
 

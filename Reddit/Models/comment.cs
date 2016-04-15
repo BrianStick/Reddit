@@ -5,10 +5,10 @@ using System.Web;
 
 namespace Reddit.Models
 {
-    public class comment
+    public class Comment
     {
-        public virtual post  Parentpost {get;set;}
-
+        
+        public int id { get; set; }
         public string body { get; set; }
         public string comments { get; set; }
         public DateTime posted { get; set; }
